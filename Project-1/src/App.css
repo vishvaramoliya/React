@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.div1{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.div1 .c1 img{
+  height: 40px;
+}
+.c1 nav a{
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+}
+.fa-magnifying-glass{
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+/* SEction part */
+
+
+.sec_main{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f6f1ee;
+}
+.sec_main div img{
+  width: 100%;
+}
+.sec_main div{
+  text-align: center;
+}
+.sec_main h3{
+  font-size: 20px;
+  margin-top: 30px;
+}
+.btn1{
+  background-color: #e31871;
+  border: none;
+  padding: 10px 50px 10px 50px;
+  border-radius: 25px;
+  color: white;
+}
+
+
+
+.se2{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.se2 div img{
+  width: 100%;
+}
+.se2 div{
+  text-align: center;
+}
+.se2 div h3{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+/* Footer */
+
+footer{
+  padding-top: 20px;
+}
+
+footer .col p{
+  font-size: 12px;
+  color: black;
+  line-height: 15px;
+}footer .col h6{
+  font-size: 17px;
+  color: black;
+}
+.foot{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+}
+footer .container{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
