@@ -24,10 +24,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -72,11 +68,24 @@ button:focus-visible {
 input{
   border-radius: 8px;
   padding: 10px 25px;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   /* transition: border-color 0.25s; */
   margin-left: 20px;
+}
+.main{
+  display: flex;
+  justify-content: center;
+}
+.box2 {
+  display: flex;
+}
+.main div{
+  margin: 50px;
+}
+.box1{
+  text-align: left,!important;
 }

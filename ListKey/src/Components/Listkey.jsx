@@ -11,7 +11,7 @@ export default function Listkey() {
 
         {
             arr.map((e,i)=>{
-                return <p key={i}>{e}</p>
+                return <p key={i}>{i +" : " + e}</p>
             })
         }
     </div>
