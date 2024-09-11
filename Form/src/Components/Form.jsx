@@ -15,9 +15,6 @@ export default function Form() {
   }, [mail]);
 
   useEffect(() => {
-    if (nameInputRef2.current) {
-      nameInputRef2.current.focus();
-    }
     console.log('Password:');
   }, [pass]);
 

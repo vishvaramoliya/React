@@ -108,7 +108,7 @@ body {
   color: #808097;
 }
 
-.input:focus ~ .placeholder {
+.input:focus  .placeholder {
   color: #ffffff;
 }
 
