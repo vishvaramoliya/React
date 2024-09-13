@@ -62,7 +62,7 @@ export default function Form() {
           placeholder=''
             id="mailInput"
             type="password"
-            value={pass}                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+            value={pass}                                                                                                                                                                                                                                                                                                                                                                                                                                                            
             onChange={(e) => setPass(e.target.value)}
             ref={nameInputRef2}
             required
