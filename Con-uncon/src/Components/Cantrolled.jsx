@@ -11,7 +11,7 @@ export default function Cantrolled() {
 
   return (
     <div>
-       <h1>CantrolledComponent</h1>
+       <h1>Cantrolled Component</h1>
        <input type="text" placeholder='Enter Name' onChange={(e) => handlechange(e)} />
     </div>
     )

@@ -10,9 +10,9 @@ export default function Uncantrolled() {
 
   return (
     <div>
-        <h1>UncantrolledComponent</h1>
+        <h1>Uncantrolled Component</h1>
         <input type="text" ref={inputRef} placeholder='Enter Value'/><br />
-        <button  onClick={handleclick}> <span>Click</span></button>
+        <button className='btn'  onClick={handleclick}> <span>Click</span></button>
     </div>
     )
 }
