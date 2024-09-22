@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main1{
+  background-color: #1942b6;
+}
+.box1{
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+.nav{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.t1{
+  color: white;
+  font-weight: 800;
+}
+.t1 span{
+  color: #2fd188;
+}
+
+.nav{
+  background-color: #1942b6;
+}
+.box1 .t2{
+  color: white;
+  margin-left: 20px;
+}
+
+.b1{
+  background-color: #ff9d19;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+.p1{
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-top: 14px;
+}
+.caption{
+  margin-bottom: 15%;
+  padding: 50px;
+  text-align: center;
+}
+.caption h1{
+  color: white;
+}
+.img1{
+  filter: brightness(40%);
+}
+
+.t2{
+  color: #2fd188;
+  font-size: 20px;
+  font-weight: 600;
+}
+.t3{
+  font-size: 70px;
+  font-weight: bold;
+}
+.t4{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 100px;
+}
+.caption button{
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  margin: 10px;
+  font-size: 17px;
+  font-weight: 650;
+}
+.btn1{
+  background-color: #2fd188;
+  color: black;
+}
+.btn2{
+  background-color: #1942b6;
+}
+
+
+
+.main3{
+  text-align: center;
+  margin-top: 50px;
+}
+.main3 .row{
+  margin-top: 50px;
+}
+.t5{
+  color: #1942b6;
+  font-weight: bold;
+  font-size: 20px;
+}
+.main3 .col{
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.main3 img{
+  height: 100%;
+  border-radius: 100%;
+  width: 100%;
+  border: 10px solid #2fd188;
+}
+.task{
+  padding: 30px;
+  background-color: #f2f2f4;
+  border-radius: 10px;
+}
+.imgs{
+    border-radius: 100%;
+    padding: 20px;
+    background-color: white;
+    border: none;
+}
+.text1{
+  margin-top: 10px;
+}
+.text1 h1{
+  font-size: 25px;
+  color: black;
+}
+.text1 p{
+  color: grey;
+}
+.task:hover .imgs img{
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+.task:hover .text1 h1{
+  color: #1942b6;
+  transition-duration: 1s;
+}
+
+
+
+
+.main4{
+  background-color: black;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+.main4 .col{
+  padding: 0px 20px;
+  color: white;
+}
+.f1{
+  color: white;
+  font-size: 17px;
+}
+.ft1{
+  color: #2fd188;
+  font-weight: bold;
+}
