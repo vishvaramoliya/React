@@ -1,0 +1,179 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(186, 223, 235);
+  font-family: 'Arial', sans-serif;
+}
+.main1{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://img.freepik.com/free-photo/orange-copy-space-background-with-sale-idea_23-2148305925.jpg?t=st=1726907824~exp=1726911424~hmac=e2d061e77056170cd1580948291d4e01a9dd383b94d4cd92425e31792485fe86&w=1380);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 150px;
+}
+
+.main {
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: transparent;
+}
+
+.img1 {
+  height: 250px;
+}
+
+.img2 {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.in1 {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid rgb(77, 0, 77);
+}
+
+.col {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(77, 0, 77);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+span {
+  color: red;
+  font-size: 14px;
+}
+
+.logo {
+  height: 150px;
+}
+
+form {
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 80%;
+  height: 35px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+label {
+  font-size: 18px;
+  margin-left: 1%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+input {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+
+.text {
+  margin-top: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.box1{
+  border: 1px solid;
+  /* width: 100%; */
+  /* height: 100vh; */
+  background-image:url(https://img.freepik.com/free-photo/blue-purple-paper-bags_23-2147652049.jpg?t=st=1726910481~exp=1726914081~hmac=7b240895a09fa7778a551d364d009468764f50eac34b94a5325b93c07159bdbf&w=1060);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 150px;
+}
+.box1 input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid purple;
+
+}
+::placeholder{
+  color: rgb(196, 137, 0);
+}
