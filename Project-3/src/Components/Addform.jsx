@@ -28,7 +28,7 @@ export default function Addform() {
     const handleClick = (e) => {
 
         e.preventDefault();
-        
+
 
         if (!name) {
             setNameerr("Please Fill This Fild");
@@ -48,7 +48,7 @@ export default function Addform() {
         else {
             setNoerr("");
         }
-        if(name && number && no){
+        if (name && number && no) {
             alert("Add to cart done!")
             setShowInputs(true);
 
@@ -57,7 +57,7 @@ export default function Addform() {
 
     const submit = (e) => {
         e.preventDefault();
-        if(color && storage && ram){
+        if (color && storage && ram) {
             alert("Submit done!")
         }
 

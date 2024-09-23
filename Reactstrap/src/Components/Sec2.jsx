@@ -5,7 +5,7 @@ export default function Sec2() {
         <div>
             <div className='container main3'>
                 <p className="t5">OUR TEAM</p>
-                <h1 style={{color:'black'}}>Meet our expert Team</h1>
+                <h1 style={{ color: 'black' }}>Meet our expert Team</h1>
                 <div className="row">
                     <div className="col col-12 col-lg-4">
                         <div className="task">

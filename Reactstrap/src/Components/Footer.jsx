@@ -29,7 +29,7 @@ export default function Footer() {
 
                     <div className="col col-12 col-lg-3 f3">
 
-                    <h1 className='ft1'>Help Link</h1>
+                        <h1 className='ft1'>Help Link</h1>
                         <br />
                         <ul>
                             <li>Terms Of use</li>
@@ -41,14 +41,14 @@ export default function Footer() {
                     </div>
 
                     <div className="col col-12 col-lg-3 f4">
-                    <h1 className='ft1'>Contact Us</h1>
-                    <br />
-                    <p> 123 Street, New York, USA</p>
-                    <hr />
-                    <p> +123 456 7890</p>
-                    <hr />
-                    <p> info@exmple.con</p>
-                    <hr />
+                        <h1 className='ft1'>Contact Us</h1>
+                        <br />
+                        <p> 123 Street, New York, USA</p>
+                        <hr />
+                        <p> +123 456 7890</p>
+                        <hr />
+                        <p> info@exmple.con</p>
+                        <hr />
                     </div>
 
                 </div>
