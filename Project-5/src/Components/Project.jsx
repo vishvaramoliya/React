@@ -1,16 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 export default function Project() {
-
-    const [task, setTask] = useState("")
-    const [record, setRecord] = useState(null)
-    const [editIndex, setEditindex] = useState("")
-    const [comp , setComp] = useState("")
+    const [task, setTask] = useState("");
+    const [record, setRecord] = useState([]);
+    const [editIndex, setEditIndex] = useState(null);
 
     useEffect(() => {
-        let data = JSON.parse(localStorage.getItem("Tasks")) || []
-        setRecord(data)
-    }, [])
+        const data = JSON.parse(localStorage.getItem("Tasks")) || [];
+        setRecord(data);
+    }, []);
 
     const Addtask = () => {
 
@@ -22,27 +20,28 @@ export default function Project() {
 
         let Record = JSON.parse(localStorage.getItem("Tasks")) || []
 
-        if(editIndex)
-        {
+        if (editIndex) {
             let data = record.find((el) => el.id == editIndex)
             data.id = editIndex
             data.task = task
 
-            localStorage.setItem("Tasks" , JSON.stringify(record))
+            localStorage.setItem("Tasks", JSON.stringify(record))
 
-            setEditindex(null)
+            setEditIndex(null)
         }
-        else{
+        else {
             Record.push(Task)
 
-        setRecord(Record)
+            setRecord(Record)
 
-        localStorage.setItem("Tasks", JSON.stringify(Record))
+            localStorage.setItem("Tasks", JSON.stringify(Record))
         }
 
         setTask("")
 
     }
+
+
 
 
     const Delet = (id) => {
@@ -57,51 +56,79 @@ export default function Project() {
     const Edit = (id) => {
         let data = record.find((el) => el.id == id)
         setTask(data.task)
-        setEditindex(id)
+        setEditIndex(id)
 
     }
 
-    const Comp = (id) =>{
-        let data = record.find((el) => el.id == id)
-        setComp(data)
-        alert(`The task ${data.task}`)
-       
-    }
+    const CompleteTask = (id) => {
+        const updatedRecord = record.map((el) =>
+            el.id === id ?
+                { ...el, completed: true }
+                : el
+        );
+        setRecord(updatedRecord);
+        localStorage.setItem("Tasks", JSON.stringify(updatedRecord));
+    };
 
     return (
-        <div className='box'>
+        <div className="box container">
             <h1>TO DO LIST</h1>
             <br />
-            <input type="text" value={task} placeholder='Enter task' onChange={(e) => setTask(e.target.value)} />
-            <button className='btn1' onClick={Addtask}>
-            <i class="fa-solid fa-plus"></i>
+            <input
+                type="text"
+                value={task}
+                placeholder="Enter task"
+                onChange={(e) => setTask(e.target.value)}
+            />
+            <button className="btn1" onClick={Addtask}>
+                <i className="fa-solid fa-plus"></i>
             </button>
-            <br /><br /><br /><br />
+            <br /><br />
 
             <div className="main">
-                <div>
-                    {
-                        record ?
-                            record.map((e) => {
-                                return <div>
-                                    <div className='box1'>
-                                        <p className='text'>{e.task}</p>
-                                    <div className="btn">
-                                    <button onClick={() => Edit(e.id)}><i id='edit' class="fa-solid fa-pen-to-square"></i></button>
-                                        <button onClick={() => Comp(e.id)}><i id='check' class="fa-regular fa-circle-check"></i></button>
-                                        <button onClick={() => Delet(e.id)}><i class="fa-solid fa-trash"></i></button>
-
-                                    </div>
-                                    </div>
+                <div className="row box5">
+                    <div className="col-4">
+                        <p>Your Tasks</p>
+                    </div>
+                    <div className="col-3">
+                        <p>Performance</p>
+                    </div>
+                    <div className="col-5">
+                        <p>Actions</p>
+                    </div>
+                </div>
+                <div className='data'>
+                    {record.length > 0 ? (
+                        record.map((e, i) => (
+                            <div key={e.id} className="box1 row">
+                                <div className="t1 col-4">
+                                    <p className="text">{e.task}</p>
                                 </div>
-                            })
-                            :
-                            "Add task"
-                    }
+
+                                <div className="t2 col-3">
+                                    <p className='text2'>{e.completed ? <span className='p1'>Completed</span> :
+                                        <span className='p2'>Pending</span>}</p>
+                                </div>
+
+                                <div className="btnbox col-5">
+                                    <button onClick={() => Edit(e.id)}>
+                                        <i id="edit" className="fa-solid fa-pen-to-square"></i>
+                                    </button>
+                                    <button onClick={() => CompleteTask(e.id)}>
+                                        <i id="check" className="fa-regular fa-circle-check"></i>
+                                    </button>
+                                    <button onClick={() => Delet(e.id)}>
+                                        <i className="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        ))
+                    ) : (
+                        "Add task"
+                    )}
                 </div>
             </div>
-
-
         </div>
-    )
+    );
 }
