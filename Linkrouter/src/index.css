@@ -1,0 +1,12 @@
+.div1 .h1{
+  text-decoration: none;
+  margin-left: 150px;
+  font-size: 20px;
+}
+.div1{
+  text-align: center;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+}
