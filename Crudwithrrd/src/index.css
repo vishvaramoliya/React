@@ -1,0 +1,117 @@
+.links{
+    padding: 15px 40px;
+    background-color: #5f2c82;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #49a09d;
+    border-radius: 10% 50% 10% 50% /
+                    50% 10% 50% 10%;
+}
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+    text-align: center;
+    height: 100vh;
+    background-image:url(https://img.freepik.com/free-photo/tropical-leaves-paper-cut-style-frame_23-2148301050.jpg?t=st=1728194492~exp=1728198092~hmac=0f4fb680e0409baad13611fb47e20793f25f7eda597560d89675437c46c65c6f&w=1060);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* .container {
+	position: absolute;
+    border: none;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    border-radius: 15px;
+    border: 1px solid;
+}    */
+
+table {
+	width: 50%;
+	border-collapse: collapse;
+	/* overflow: hidden; */
+    /* border-radius: 15px; */
+    border: 10px solid #49a09d;
+    margin-left: 25%
+}
+
+th,
+td {
+	padding: 15px;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	th {
+		background-color:#49a09d;
+        text-align: center;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
+}
+.main{
+    padding-top: 150px;
+}
+.main1{
+    width: 30%;
+    margin-left: 35%;
+    box-shadow: 0 0 20px rgb(185, 233, 243);
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+.box1{
+    text-align: left;
+    padding: 5%;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #49a09d;
+    width: 100%;
+    margin-top: 5px;
+    height: 40px;
+    padding-left: 10px;
+    color: #260040;
+}
+button{
+    width: 100%;
+    margin-top: 30px;
+    height: 40px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    color: white;
+    border: none;
+}
+
+::placeholder{
+    color: #5f2c82;
+}

@@ -13,12 +13,11 @@ export default function Home() {
         <div className="logo">CANAVAS</div>
 
         <div className="div1">
+          <h1>home</h1>
+          <Link to={`/Shop/${data}`} className='h1'>Shop</Link>
+          <Link to={"/Contact"} className='h1'>Contact</Link>
           <h1>{location.state.name}</h1>
 
-          <Link to={"/"} className='h1'>Home</Link>
-          <Link to={`/Shop/${data}`} className='h1'>Shop</Link>
-          <Link to={"/Review"} className='h1'>Review</Link>
-          <Link to={"/Contact"} className='h1'>Contact</Link>
         </div>
       </div>
     </>

@@ -1,31 +1,26 @@
-import React from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import React from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 export default function Shop() {
   const navigate = useNavigate();
-  const param = useParams();
+  const params = useParams(); 
 
   const btn = () => {
-    navigate("/", { state: { name: "vishwa" } })
-  }
+    navigate("/", { state: { name: 'Vishwa' } });
+  };
+
   return (
-
-    <div><h1>
-      Shop page
-    </h1>
-
+    <div>
+      <h1>Shop Page</h1>
       <div className="div1">
-        <h1>shop</h1>
-        <h1>{param.id}</h1>
-        <button onClick={btn}>go home</button>
-        <Link to={"/"} className='h1'>Home</Link>
-        <Link to={"/Shop"} className='h1'>Shop</Link>
-        <Link to={"/Review"} className='h1'>Review</Link>
-        <Link to={"/Contact"} className='h1'>Contact</Link>
+        <h1>{params.id && `Shop ID: ${params.id}`}</h1>
 
+        <button onClick={btn}>Go Home</button>
+
+        <Link to="/" className="link">Home</Link>
+        <Link to="/shop" className="link">Shop</Link>
+        <Link to="/contact" className="link">Contact</Link>
       </div>
-
     </div>
-
-  )
-} 
+  );
+}
