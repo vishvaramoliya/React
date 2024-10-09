@@ -23,7 +23,7 @@ input[type="text"] {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.7);
   color: #333;
-  text-transform: uppercase;
+  text-transform: capitalize;
   position: sticky;
   top: 0; 
   z-index: 1000; 
