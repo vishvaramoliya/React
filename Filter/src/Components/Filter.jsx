@@ -23,7 +23,7 @@ export default function Filter() {
                 data.map((e, i) => {
                     return <ul>
                         <li>{e.name}</li>
-                        <li>{e.name}</li>
+                        <li>{e.subject}</li>
                     </ul>
                 })
             }
