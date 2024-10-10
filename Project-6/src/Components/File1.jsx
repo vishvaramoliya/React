@@ -58,7 +58,7 @@ export default function File1() {
             img: "https://m.media-amazon.com/images/I/71r0Ysx+oVL._AC_UY327_FMwebp_QL65_.jpg",
             Product: "realme NARZO N65 5G (Amber Gold 6GB RAM, 128GB Storage) India's 1st D6300 5G Chipset | Ultra Slim Design | 120Hz Eye Comfort Display | 50MP AI Camera| Charger in The Box 4.1 ",
             Price: "$9,999"
-
+            
         },
         {
             name: 'Samsung' + "SAMSUNG" + "samsung",
@@ -128,17 +128,17 @@ export default function File1() {
                 data &&
                 data.map((e, i) => {
                     return <div className='box1 container' key={i}>
-                            <div className="col">
-                                <div className='img'>
-                                    <img src={e.img} alt={e.name} />
-                                </div>
-                                <div className='text'>
-                                    <p>{e.Product}</p>
+                        <div className="col">
+                            <div className='img'>
+                                <img src={e.img} alt={e.name} />
+                            </div>
+                            <div className='text'>
+                                <p>{e.Product}</p>
 
-                                    <p>Price: {e.Price}  </p>
-                                </div>
+                                <p>Price: {e.Price}  </p>
                             </div>
                         </div>
+                    </div>
                 })
             }
 
