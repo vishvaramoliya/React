@@ -1,0 +1,85 @@
+body{
+  text-align: center;
+  background-image:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.3)), url(https://img.freepik.com/free-vector/winter-flowers-with-empty-banner-hand-drawn_23-2148374169.jpg?t=st=1729080990~exp=1729084590~hmac=cf85ea5177ca67498467fd70f59f82bc2f0337ccdf8e0f3d05206c866eba75c9&w=740);
+  /* background-image:url(https://img.freepik.com/free-vector/winter-flowers-with-empty-banner-hand-drawn_23-2148374169.jpg?t=st=1729080990~exp=1729084590~hmac=cf85ea5177ca67498467fd70f59f82bc2f0337ccdf8e0f3d05206c866eba75c9&w=740); */
+  background-size: cover;
+  height: 98vh;
+  background-position: center;
+  
+}
+.main{
+  width: 42%;
+  height: 645px;
+  position: absolute;
+  top: 8.8%;
+  left: 28.8%;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.inp{
+  height: 30px;
+  background-color: transparent;
+  width: 80%;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 1px solid;
+}
+.box{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40px;
+  height: 82%;
+}
+.btn1{
+  margin-left: -60px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+.con{
+  height: 65%;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.box1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 5px 20px;
+  margin-top: 15px;
+}
+
+::placeholder{
+  color: black;
+}
+
+.btn2{
+  background-color: #1d232d;
+  border: none;
+  margin-left: 10px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.btns{
+  width: 100%;
+}
+.btns button{
+  width: 25%;
+  height: 40px;
+  font-size: 20px;
+  background-color: #1d232d;
+  color: white;
+  border: none;
+  margin-left: 30px;
+}
+
+.head{
+  font-size: 60px;
+  font-family: "Ruge Boogie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
