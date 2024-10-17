@@ -24,6 +24,8 @@ export const todo = createSlice({
             state.taskData.map((e, i)=>{
                 if(e.id == action.payload.id){
                     e.task = action.payload.task
+                    e.priority = action.payload.priority
+                    e.hobbies = action.payload.hobbies
                 }
                 else{
                     e
