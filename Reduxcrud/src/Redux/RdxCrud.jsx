@@ -27,6 +27,7 @@ export default function RdxCrud() {
 
 
 
+
     return (
         <div>
             <h1>RdxCrud</h1>
@@ -43,7 +44,7 @@ export default function RdxCrud() {
                             <li>{e.id}</li>
                             <li>{e.name}</li>
                             <li>{e.subject}</li>
-                            <button>edit</button>
+                            <button>Edit</button>
                             <button onClick={() => deleteRecord(e.id)}>Delete</button>
                         </ul>
                     })
