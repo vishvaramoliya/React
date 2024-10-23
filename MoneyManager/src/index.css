@@ -1,0 +1,179 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-photo/3d-rendering-money-tree_23-2151575413.jpg?t=st=1729688107~exp=1729691707~hmac=8cda622c379ddbf7d1f226832e8237e39b47a1c8b5e1ab96c35ca91b8b6df51b&w=1380');
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.money-manager {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(58, 16, 52, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  text-shadow: 2px 2px #333;
+}
+
+
+.budget-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.budget-display {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.budget-input {
+  width: 100%;
+  padding: 15px 10px;
+  border: 2px solid #5e1c52;
+  border-radius: 12px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.add-budget-button,
+.add-product-button {
+  background: linear-gradient(45deg, #3a1034, #5e1c52);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.add-budget-button:hover,
+.add-product-button:hover {
+  background: linear-gradient(45deg, #5e1c52, #3a1034);
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-budget-button:focus,
+.add-product-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fff, 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.product-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  list-style-type: none;
+  text-align: left;
+}
+
+.product-item li {
+  padding: 5px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.input-container {
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 15px 10px;
+  border: 2px solid #5e1c52;
+  border-radius: 12px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #9e9e9e;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus+label,
+input:not(:placeholder-shown)+label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.8rem;
+  color: #ffcc00;
+}
+
+input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 8px rgba(255, 204, 0, 0.8);
+}
+
+input:hover {
+  border-color: #5e1c52;
+}
+
+.product-price-input {
+  width: 48%;
+  display: inline-block;
+}
+
+.product-name-input {
+  width: 48%;
+  display: inline-block;
+}
