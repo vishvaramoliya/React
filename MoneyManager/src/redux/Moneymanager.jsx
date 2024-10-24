@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addBudget, addExp } from '../features/Budgetslice';
+import { addBudget, addExp, delExp } from '../features/Budgetslice';
 
 export default function Moneymanager() {
     const [count, setCount] = useState("");
     const [addProduct, setAddProduct] = useState("");
     const [addAmount, setAddAmount] = useState("");
 
-    const [productList, setProductList] = useState([])
+    const [productList, setProductList] = useState([]);
 
     const dispatch = useDispatch();
-
     const Data = useSelector((state) => state.BudgetKey.Data);
 
     const handleAddBudget = () => {
-        const amount = Number(count)
+        const amount = Number(count);
 
         if (amount) {
             dispatch(addBudget(amount));
@@ -23,7 +22,7 @@ export default function Moneymanager() {
     };
 
     const handleAddProduct = () => {
-        const amount = Number(addAmount)
+        const amount = Number(addAmount);
 
         if (amount) {
             dispatch(addExp(amount));
@@ -31,6 +30,17 @@ export default function Moneymanager() {
             setAddProduct('');
             setAddAmount('');
         }
+    };
+
+    const handleDelete = (index, amount) => {
+        // Remove the product from the product list
+        const updatedProductList = productList.filter((_, i) => i !== index);
+
+        // Update the product list state
+        setProductList(updatedProductList);
+
+        // Add the deleted amount back to the budget
+        dispatch(delExp(amount));
     };
 
     return (
@@ -45,51 +55,60 @@ export default function Moneymanager() {
                     <input
                         type="number"
                         className="budget-input product-name-input"
-                        placeholder=' '
+                        placeholder="Enter Budget"
                         value={count}
                         onChange={(e) => setCount(e.target.value)}
                     />
-                    <label>Enter Product Price</label>
                 </div>
 
-                <button className="add-budget-button" onClick={handleAddBudget}>Add Budget</button>
+                <button className="add-budget-button" onClick={handleAddBudget}>
+                    Add Budget
+                </button>
             </div>
+
             <div className="product-section">
                 <div className="input-container">
                     <input
                         type="number"
                         className="product-price-input"
-                        placeholder=" "
+                        placeholder="Enter Product Price"
                         value={addAmount}
                         onChange={(e) => setAddAmount(e.target.value)}
                     />
-                    <label>Enter Product Price</label>
                 </div>
 
                 <div className="input-container">
                     <input
                         type="text"
                         className="product-name-input"
-                        placeholder=" "
+                        placeholder="Enter Product Name"
                         value={addProduct}
                         onChange={(e) => setAddProduct(e.target.value)}
                     />
-                    <label>Enter Product Name</label>
                 </div>
 
-                <button className="add-product-button" onClick={handleAddProduct}>Add Product</button>
+                <button className="add-product-button" onClick={handleAddProduct}>
+                    Add Product
+                </button>
             </div>
 
-
             <div className="product-list">
-                {
-                    productList.map((e, i) => (
-                        <ul key={i} className="product-item">
-                            <li>Price: ${e.addAmount}</li>
-                            <li>Product: {e.addProduct}</li>
-                        </ul>
-                    ))
-                }
+                {productList.map((e, i) => (
+                    <ul key={i} className="product-item">
+                       <div>
+                       <li>Price: ${e.addAmount}</li>
+                       <li>Product: {e.addProduct}</li>
+                       </div>
+                        <div>
+                        <li>
+                            <button className='add-product-button' onClick={() => handleDelete(i, e.addAmount)}>
+                            <i className="fa-solid fa-trash-can "></i>
+                            </button>
+                        </li>
+                        </div>
+                        
+                    </ul>
+                ))}
             </div>
         </div>
     );

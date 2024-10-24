@@ -102,6 +102,9 @@ body {
   border-radius: 8px;
   list-style-type: none;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product-item li {
