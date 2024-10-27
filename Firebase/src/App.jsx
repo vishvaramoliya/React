@@ -14,7 +14,6 @@ export default function App() {
               <Route path='/dashboard' Component={Dashboard}></Route>
             </Routes>
         </BrowserRouter>
-
     </div>
   )
 }
