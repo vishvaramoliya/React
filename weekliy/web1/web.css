@@ -17,7 +17,8 @@ header {
     align-items: center;
     transition: background-color 0.3s ease;
 }
-#icon1{
+
+#icon1 {
     color: #faaf32;
     display: none;
 }
@@ -39,6 +40,7 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
+
 .nav a {
     color: white;
     padding: 0px 20px;
@@ -48,7 +50,8 @@ header {
     text-decoration: none;
     line-height: 50px;
 }
-.nav{
+
+.nav {
     width: 150px;
     position: absolute;
     top: 60%;
@@ -56,6 +59,7 @@ header {
     display: none;
     background-color: black;
 }
+
 .text {
     color: white;
     width: 42%;
@@ -89,13 +93,15 @@ header {
     font-style: normal;
     letter-spacing: 2px;
 }
-.p3{
+
+.p3 {
     color: grey;
     font-family: sans-serif;
     line-height: 30px;
     font-weight: 700;
 }
-.btn1{
+
+.btn1 {
     color: white;
     padding: 10px 20px;
     background-color: transparent;
@@ -103,7 +109,8 @@ header {
     font-size: 20px;
     border-radius: 5px;
 }
-.btn2{
+
+.btn2 {
     color: white;
     padding: 10px 20px;
     background-color: #faaf32;
@@ -114,7 +121,7 @@ header {
 }
 
 .main2 {
-    height: 200vh;
+    height: 150vh;
     background-image: url(https://canvastemplate.com/demos/burger/images/icon-bg.png);
     width: 100%;
     background-repeat: repeat;
@@ -122,14 +129,15 @@ header {
     text-align: center;
     padding: 50px 0px;
 }
-.p4{
+
+.p4 {
     color: #faaf32;
     font-weight: 100;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.txt1 p{
+.txt1 p {
     font-family: "Lobster Two", sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -138,7 +146,8 @@ header {
     color: #232428;
     font-size: 50px;
 }
-.txt2 p{
+
+.txt2 p {
     width: 50%;
     margin-left: 25%;
     font-weight: lighter;
@@ -148,10 +157,244 @@ header {
     margin-top: 20px;
     line-height: 28px;
 }
-.txt3 img{
+
+.txt3 img {
     height: 300px;
     border-radius: 5px;
 }
-.txt4 img{
+
+.txt4 img {
     height: 250px;
+}
+
+
+.main3 {
+    background-color: #101010;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.text1 {
+    text-align: center;
+}
+
+.p5 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #FBAF32;
+}
+
+.text2 {
+    text-align: center;
+}
+
+.p6 {
+    font-size: 70px;
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    width: 100%;
+}
+
+.col-3 {
+    width: 450px;
+    margin: 0;
+}
+
+.img1 {
+    width: 100%;
+}
+
+.p7 {
+    color: #FBAF32;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.p8 {
+    color: rgb(181, 181, 181);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+.box1 {
+    padding-left: 50px;
+}
+
+.col-3 {
+    padding: 0px 20px;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* Move up */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Move back to original position */
+    }
+}
+
+.img1 {
+    animation: upDown 2s ease-in-out infinite;
+}
+
+
+
+
+.main4 {
+    background-image: url(https://canvastemplate.com/demos/burger/images/others/section-2.jpg);
+    padding: 0px 150px;
+}
+
+
+.box2 {
+    padding: 10px 0px 50px 0px;
+    width: 50%;
+}
+
+.box3 {
+    width: 50%;
+}
+
+.img2 {
+    height: 50px;
+}
+
+.p9 {
+    display: flex;
+    align-items: center;
+}
+
+.box2 div {
+    width: 100%;
+}
+
+.box4 {
+    padding: 0px 50px 0px 0px;
+    margin-top: 20px;
+}
+
+.box4 .t1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 0px 10px 0px;
+}
+
+.t1 h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.t2 p {
+    color: grey;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.t2 {
+    padding: 5px 0px;
+}
+
+.img3 {
+    height: 600px;
+    animation: upDown 2s ease-in-out infinite;
+
+}
+
+
+
+.main5 {
+    background-image: url(https://canvastemplate.com/demos/burger/images/others/section-5.jpg);
+    padding: 0px 150px;
+}
+
+.box5 {
+    padding-top: 100px;
+}
+
+
+.main6 {
+    background-image: url(https://canvastemplate.com/demos/burger/images/others/section-4.jpg);
+    padding: 0px 150px;
+    background-size: cover;
+}
+
+.box6 {
+    padding-top: 100px;
+}
+.box3{
+    text-align: center;
+}
+
+
+
+footer{
+    background-image: url(https://canvastemplate.com/demos/burger/images/others/footer.jpg);
+    background-color: #101010;
+    padding: 100px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0px;
+}
+footer .row{
+    width: 60%;
+    margin-left: 20%;
+}
+footer .row div{
+        width: 50%;
+}
+.img4{
+    height: 300px;
+}
+.box6{
+    color: white;
+}
+.box6 h1{
+    font-size: 50px;
+}
+.p10{
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(125, 125, 125);
+    font-size: 18px;
+}
+.btn3{
+    padding: 10px 20px;
+    background-color: #faaf32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.box7{
+    width: 100%;
+    text-align: center;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
 }

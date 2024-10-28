@@ -71,5 +71,46 @@
         font-size: 30px;
     }
     
-    
+    .box2{
+        width: 100%;
+    }
+    .box3{
+        width: 100%;
+        text-align: center;
+    }
+    .main4{
+        padding: 0px 20px;
+    }
+    .main5{
+        padding: 0px 20px;
+    }
+    .box5{
+        width: 100%;
+    }
+    .main6{
+        padding: 0px 20px;
+    }
+    footer{
+        background-image: url(https://canvastemplate.com/demos/burger/images/others/footer.jpg);
+        background-color: #101010;
+        padding: 100px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 50px 0px;
+    }
+    footer .row{
+        width: 100%;
+        margin-left: 0px;
+    }
+    footer .row div{
+            width: 100%;
+    }
+    .box6{
+        text-align: center;
+    }
+    .box8{
+        text-align: center;
+        padding-top: 50px;
+    }
 }
