@@ -9,24 +9,52 @@ body {
   font-family: "Sour Gummy", sans-serif;  
 }
 .heading{
+  animation: fadeIn 1s ease-in-out;
   font-size: 50px;
   font-family: "Sour Gummy", sans-serif;  
 }
 .s1_main1{
+  width: 450px;
   text-align: center;
   border-radius: 15px;
   padding: 30px;
-  /* animation: ; */
+  overflow-x: hidden;
+  /* animation: fadeIn 1s ease-in-out; */
   background-color: white;
 }
+@keyframes fadeIn {
+  from {
+      /* opacity: 0; */
+      margin-left: -100px;
+  }
+  to {
+      /* opacity: 1; */
+  }
+}
+@keyframes fadeIn1 {
+  from {
+      /* opacity: 0; */
+      margin-right: -100px;
+  }
+  to {
+      /* opacity: 1; */
+  }
+}
 input{
-  width: 400px;
+  width: 100%;
   height: 40px;
   padding-left: 10px;
   margin: 0px;
   border-radius: 15px;
   border:2px solid rgb(227, 227, 227);
   font-family: "Sour Gummy", sans-serif;  
+}
+.inp1{
+  animation: fadeIn 1s ease-in-out;
+}
+.inp2{
+  animation: fadeIn1 1s ease-in-out;
+  /* margin-top: 20px; */
 }
 button{
   width: 100%;
@@ -40,12 +68,16 @@ button{
 .errmsg{
   color: red;
   line-height: 5px;
+  text-align: left;
+  margin-left: 10px;
 }
 .btns{
   height: 40px;
+  width: 100%;
   display: flex;
   border:2px solid rgb(227, 227, 227);
   border-radius: 15px;
+  animation: fadeIn 1s ease-in-out;
 }
 .btn1{
   /* padding: 15px 30px; */
@@ -83,4 +115,140 @@ button{
 }
 ::placeholder{
   font-family: "Sour Gummy", sans-serif;  
+}
+.btn2{
+   font-size: 18px;
+   font-weight: bold;
+   color: #fff;
+   background: linear-gradient(45deg,  #00003e, #006ded);
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+   animation: fadeIn 1s ease-in-out;
+
+}
+
+
+
+
+
+
+.heading1{
+  animation: fadeIn1 1s ease-in-out;
+  font-size: 50px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.s1_main2{
+  width: 450px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+  overflow-x: hidden;
+  /* animation: fadeIn 1s ease-in-out; */
+  background-color: white;
+}
+
+
+input{
+  width: 400px;
+  height: 40px;
+  padding-left: 10px;
+  margin: 0px;
+  border-radius: 15px;
+  border:2px solid rgb(227, 227, 227);
+  font-family: "Sour Gummy", sans-serif;  
+  animation: fadeIn1 1s ease-in-out;
+
+}
+button{
+  width: 100%;
+  /* margin: 10px; */
+  height: 40px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.p1{
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.errmsg{
+  color: red;
+  line-height: 5px;
+  text-align: left;
+  margin-left: 10px;
+}
+.btns1{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  border:2px solid rgb(227, 227, 227);
+  border-radius: 15px;
+  animation: fadeIn1 1s ease-in-out;
+}
+.btn12{
+  /* padding: 15px 30px; */
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg,  #00003e, #006ded);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 100%;
+
+}
+.btn12 .link{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.btn11 .link{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.btn11{
+  /* padding: 15px 30px; */
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 100%  ;
+
+}
+::placeholder{
+  font-family: "Sour Gummy", sans-serif;  
+}
+.btn21{
+   font-size: 18px;
+   font-weight: bold;
+   color: #fff;
+   background: linear-gradient(45deg,  #00003e, #006ded);
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+   animation: fadeIn1 1s ease-in-out;
+
+}
+
+
+.p1{
+  animation: fadeIn2 1s ease-in-out;
+    text-shadow: 0 13.36px 8.896px #2c482e, 0 -2px 1px #aeffb4;
+   letter-spacing: -1px;
+   color: #dd61b2;
+}
+
+
+@keyframes fadeIn2 {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }

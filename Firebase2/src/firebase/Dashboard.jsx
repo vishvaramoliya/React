@@ -5,44 +5,46 @@ import { doc, getDoc } from 'firebase/firestore'
 
 export default function Dashboard() {
 
-    const [user , setUser] = useState('')
-    const [userdata , setUserdata] = useState()
+    const [user, setUser] = useState('')
+    const [userdata, setUserdata] = useState()
 
-    useEffect(()=>{
-        let subscribe = onAuthStateChanged(auth,(currentuser)=>{
-            if(currentuser){
+    useEffect(() => {
+        let subscribe = onAuthStateChanged(auth, (currentuser) => {
+            if (currentuser) {
                 setUser(currentuser)
             }
         })
-    },[])
+    }, [])
 
-    useEffect(()=>{
-        if(user){
+    useEffect(() => {
+        if (user) {
             fetchUser()
         }
-    },[user])
+    }, [user])
 
-    const fetchUser = ()=>{
-        getDoc(doc(db,"users" , user.uid))
-        .then(data=>{
-            console.log(data.data());
-            setUserdata(data.data())
-        })  
+    const fetchUser = () => {
+        getDoc(doc(db, "users", user.uid))
+            .then(data => {
+                console.log(data.data());
+                setUserdata(data.data())
+            })
     }
-  return (
-    <>
-    <div>
-        
-    {
-        userdata ?
+    return (
+        <>
+            <div className='main4'>
 
-        <p className='p1'>WELCOME {userdata.name}</p>
+                {
+                    userdata ?
 
-        :
-        <img src="https://cdn.dribbble.com/users/1626465/screenshots/4617986/__-2.gif" alt="" />
-    }
+                        <p className='p1'>WELCOME {userdata.name}</p>
 
-    </div>
-    </>
-  )
+                        :
+                        <div className='main3'>
+                            <img src="https://i.pinimg.com/originals/90/6f/4f/906f4f0cebd502025824baf6f2d4118c.gif" alt="" />
+                        </div>
+                }
+
+            </div>
+        </>
+    )
 }

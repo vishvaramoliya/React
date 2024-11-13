@@ -29,35 +29,35 @@ export default function Signup() {
                 navigate("/dashboard");
             })
         if (!name) {
-            setNameerr("Enter name")
+            setNameerr("*Enter name")
         }
         else {
             setNameerr("")
         }
 
         if (!email) {
-            setEmailerr("Enter email")
+            setEmailerr("*Enter email")
         }
         else {
             setEmailerr("")
         }
 
         if (!pass) {
-            setPasserr("Enter password")
+            setPasserr("*Enter password")
         }
         else {
             setPasserr("")
         }
 
         if (!city) {
-            setCityerr("Enter city")
+            setCityerr("*Enter city")
         }
         else {
             setCityerr("")
         }
 
         if (!hobby) {
-            setHobbyerr("Enter hobby")
+            setHobbyerr("*Enter hobby")
         }
         else {
             setHobbyerr("")
@@ -78,22 +78,22 @@ export default function Signup() {
             </div>
 
             <br />
-            <input type="text" value={name} placeholder='Enter name' onChange={(e) => setName(e.target.value)} />
+            <input className='inp1' type="text" value={name} placeholder='Enter name' onChange={(e) => setName(e.target.value)} />
             <p className='errmsg'>{nameerr}</p>
             {/* <br /> */}
-            <input type="text" value={email} placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} />
+            <input className='inp1' type="text" value={email} placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} />
             <p className='errmsg'>{emailerr}</p>
             {/* <br /> */}
-            <input type="text" value={pass} placeholder='Enter Pass' onChange={(e) => setPass(e.target.value)} />
+            <input className='inp1' type="text" value={pass} placeholder='Enter Pass' onChange={(e) => setPass(e.target.value)} />
             <p className='errmsg'>{passerr}</p>
             {/* <br /> */}
-            <input type="text" value={city} placeholder='Enter City' onChange={(e) => setCity(e.target.value)} />
+            <input className='inp1' type="text" value={city} placeholder='Enter City' onChange={(e) => setCity(e.target.value)} />
             <p className='errmsg'>{cityerr}</p>
             {/* <br /> */}
-            <input type="text" value={hobby} placeholder='Enter Hobby' onChange={(e) => setHobby(e.target.value)} />
+            <input className='inp1' type="text" value={hobby} placeholder='Enter Hobby' onChange={(e) => setHobby(e.target.value)} />
             <p className='errmsg'>{hobbyerr}</p>
             {/* <br /> */}
-            <button onClick={handlesignup}>Sign Up</button>
+            <button className='btn2' onClick={handlesignup}>Sign Up</button>
             <br />
 
         </div>
