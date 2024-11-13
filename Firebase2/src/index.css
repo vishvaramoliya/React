@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(45deg,  #00003e, #006ded);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.heading{
+  font-size: 50px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.s1_main1{
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+  /* animation: ; */
+  background-color: white;
+}
+input{
+  width: 400px;
+  height: 40px;
+  padding-left: 10px;
+  margin: 0px;
+  border-radius: 15px;
+  border:2px solid rgb(227, 227, 227);
+  font-family: "Sour Gummy", sans-serif;  
+}
+button{
+  width: 100%;
+  /* margin: 10px; */
+  height: 40px;
+}
+.p1{
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.errmsg{
+  color: red;
+  line-height: 5px;
+}
+.btns{
+  height: 40px;
+  display: flex;
+  border:2px solid rgb(227, 227, 227);
+  border-radius: 15px;
+}
+.btn1{
+  /* padding: 15px 30px; */
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg,  #00003e, #006ded);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 100%;
+}
+.btn1 .link{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.btn .link{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.btn{
+  /* padding: 15px 30px; */
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 100%  ;
+}
+::placeholder{
+  font-family: "Sour Gummy", sans-serif;  
+}
