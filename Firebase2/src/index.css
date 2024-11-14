@@ -79,6 +79,7 @@ button{
   border-radius: 15px;
   animation: fadeIn 1s ease-in-out;
 }
+
 .btn1{
   /* padding: 15px 30px; */
   font-size: 18px;
@@ -147,10 +148,18 @@ button{
   /* animation: fadeIn 1s ease-in-out; */
   background-color: white;
 }
+.btns2{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  border:2px solid rgb(227, 227, 227);
+  border-radius: 15px;
+  animation: fadeIn1 1s ease-in-out;
+}
 
 
 input{
-  width: 400px;
+  width: 100%;
   height: 40px;
   padding-left: 10px;
   margin: 0px;
@@ -158,7 +167,6 @@ input{
   border:2px solid rgb(227, 227, 227);
   font-family: "Sour Gummy", sans-serif;  
   animation: fadeIn1 1s ease-in-out;
-
 }
 button{
   width: 100%;
@@ -176,14 +184,7 @@ button{
   text-align: left;
   margin-left: 10px;
 }
-.btns1{
-  width: 100%;
-  height: 40px;
-  display: flex;
-  border:2px solid rgb(227, 227, 227);
-  border-radius: 15px;
-  animation: fadeIn1 1s ease-in-out;
-}
+
 .btn12{
   /* padding: 15px 30px; */
   font-size: 18px;
@@ -251,4 +252,10 @@ button{
   to {
       opacity: 1;
   }
+}
+
+.box1{
+  display: flex;
+  flex-wrap: wrap;
+
 }

@@ -5,6 +5,7 @@ import { auth } from '../../firebaseConfige'
 
 export default function Signin() {
 
+   
     const [email, serEmail] = useState("")
     const [pass, serPass] = useState("")
     const [emailerr, setEmailerr] = useState('')
@@ -34,9 +35,9 @@ export default function Signin() {
     }
     return (
         <div className='s1_main2'>
-            <h1 className='heading1'>Signin</h1>
+            <h1 className='heading1' data-aos="fade-left">Signin Form</h1>
 
-            <div className="btns1">
+            <div className="btns2">
                 <button className='btn11'>
                     <Link className='link' to={"/"}>Sign Up</Link>
                 </button>
