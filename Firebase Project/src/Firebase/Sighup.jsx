@@ -67,7 +67,7 @@ export default function Signup() {
 
     return (
         <div className='s1_main1'>
-            <h1 className='heading'>Signup Form</h1>
+            <h1 className='heading'>Sign up Form</h1>
             <div className="btns">
             <button className='btn1'>
             <Link className='link' to={"/"}>Sign Up</Link>

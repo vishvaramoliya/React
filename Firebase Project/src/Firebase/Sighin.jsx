@@ -36,7 +36,7 @@ export default function Signin() {
     }
     return (
         <div className='s1_main2'>
-            <h1 className='heading1' data-aos="fade-left">Signin Form</h1>
+            <h1 className='heading1' data-aos="fade-left">Sign ain Form</h1>
 
             <div className="btns2">
                 <button className='btn11'>

@@ -79,6 +79,17 @@ button{
   border-radius: 15px;
   animation: fadeIn 1s ease-in-out;
 }
+.btns1{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  border:none;
+  border-radius: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+.btns1 button{
+    margin: 10px;
+}
 
 .btn1{
   /* padding: 15px 30px; */
@@ -258,4 +269,100 @@ button{
   display: flex;
   flex-wrap: wrap;
 
+}
+
+
+/* Main dashboard flex container */
+.dashbord_flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual user record cards */
+.user_record {
+  background: transparent ;
+  border-radius: 12px;
+  color: #ffffff;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hover effect for user record */
+.user_record:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Inner text styling */
+.user_text h1 {
+  font-size: 18px;
+  margin: 5px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Action button container */
+.user_action {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Buttons for Edit and Delete */
+.user_action button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: black;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effects for buttons */
+.user_action button:hover {
+  background-color: #6fc3df;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Adding ripple effect to buttons */
+.user_action button:active {
+  position: relative;
+  overflow: hidden;
+}
+
+.user_action button:active::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+  from {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(4);
+  }
 }

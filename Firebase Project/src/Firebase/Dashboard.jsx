@@ -101,15 +101,18 @@ export default function DashBoard() {
                 <input type="text" placeholder='Enter Your Task...' value={task} onChange={(e) => setTask(e.target.value)} />
                 <h3>priority</h3>
                 <input type="text" placeholder='Enter Your priority...' value={priority} onChange={(e) => setPriority(e.target.value)} />
-                <button onClick={handleTask}>
+                <br /><br />
+                <div className="btns1">
+                <button className='btn1' onClick={handleTask}>
                     {editIndex == null ? "Add Task" : "Update Task"}
                 </button>
+                <button className='btn'>
+                <Link className='link' to={"/signin"}>
+                    Sign In
+                </Link></button>
+                </div>
 
-                <Link to={"/signin"}>
-                    <button>Sign In</button>
-                </Link>
-
-
+                <br /><br />
 
                 <div className="dashbord_flex">
                     {
