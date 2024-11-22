@@ -1,0 +1,162 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.Dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg,
+  #0033cc,
+  #3366ff,
+  #66ccff,
+  #99ccff);
+}
+
+.Dashboard h1 {
+  background: linear-gradient(135deg,
+      #dab2ff,
+      #a845ff,
+      #35007a,
+      #000000);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 100px;
+  animation: d1 2s ease-in-out;
+}
+
+@keyframes d1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg,
+      #0033cc,
+      #3366ff,
+      #66ccff,
+      #99ccff);
+  width: 100%;
+}
+
+.main1 {
+  display: flex;
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 800px;
+  height: 500px;
+}
+
+.box3 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.box3 img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.box1 {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.box1 input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #494949;
+  border-radius: 0px;
+  font-size: 16px;
+  background-color: transparent;
+}
+::placeholder{
+  color: rgb(66, 66, 66);
+}
+
+.box1 button {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  background-color: #4c8bf5;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.box1 button:hover {
+  background-color: #3a6edc;
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.box2 hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  width: 100px;
+}
+
+.box2 p {
+  margin: 0 10px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .main1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .box3,
+  .box1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .box3 {
+    padding: 20px;
+  }
+}
