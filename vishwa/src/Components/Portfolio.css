@@ -1,0 +1,92 @@
+
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 div{
+    text-align: center;
+}
+.text1{
+    /* font-size: 70px; */
+    font-weight: 700;
+    color: #8c8e8d;
+    opacity: 80%;
+}
+.text{
+    color: #f0f0f0;
+  /* position: absolute; */
+  /* top: 60%; */
+  transform: translateY(-50%);
+  font-size: 2em;
+  /* margin-left: -50px; */
+  /* width:calc(100%-50px); */
+  /* width: 600px; */
+  }
+.word
+{
+display: inline-block;
+color: #ffffff;
+}
+
+.word span
+{
+position: absolute;
+top: 0;
+overflow: hidden;
+animation: animate 10s linear infinite;
+opacity: 0;
+/* border: 2px solid red; */
+/* width: 400px; */
+margin-left: 15px;
+}
+
+@keyframes animate
+{
+0%
+{ 
+opacity: 0;
+transform: translateY(-50px);
+}
+
+2%
+{ 
+opacity: 1;
+transform: translateY(0px);
+}
+
+18%
+{ 
+opacity: 1;
+transform: translateY(0px);
+}
+
+20%
+{ 
+opacity: 0;
+transform: translateY(50px);
+}
+
+
+}
+
+.word span:nth-child(1)
+{
+animation-delay: 0s;
+}
+
+.word span:nth-child(2)
+{
+animation-delay: 2s;
+}
+
+.word span:nth-child(3)
+{
+animation-delay:4s;
+}
+.main_div{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)), url(https://bslthemes.com/html/patrick/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,10 @@
+.main_div{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)), url(https://bslthemes.com/html/patrick/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
