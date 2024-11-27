@@ -56,7 +56,7 @@ export default function About() {
               A passionate Full Stack Web Developer skilled in creating
               user-friendly and efficient web applications. I specialize in
               seamless UI design, scalable backends, and turning ideas into
-              reality. Let’s build something amazing together!
+              reality. Let' s build something amazing together!
             </p>
             <br />
             <br />
