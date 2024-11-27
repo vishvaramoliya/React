@@ -43,7 +43,7 @@ export default function Portfolio() {
             <div className="text ml-[-200px] text-[20px] animate__animated animate__fadeInUpBig">
               I Am   a
               <div className="word">
-                <span> Frontend  </span>
+                <span> Frontend Developer </span>
                 <span> Backend Developer </span>
                 <span> Full-Stack Developer  </span>
               </div>
