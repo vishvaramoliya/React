@@ -23,8 +23,8 @@ export default function SignUp() {
     <div>
         <h1>SignUp</h1>
 
-        <input type="text" placeholder='Enter email' onChange={(e)=>setEmail(e.target.value)}/>
-        <input type="text" placeholder='Enter password'  onChange={(e)=>setPass(e.target.value)}/>
+        <input type="text" placeholder='Enter email' onChange={(e)=>setEmail(e.target.value)}/> <br />
+        <input type="text" placeholder='Enter password'  onChange={(e)=>setPass(e.target.value)}/> <br />
 
         <button onClick={handlesignup}>Sigh Up</button>
         <Link to={"/signin"}>Sing In?</Link>
